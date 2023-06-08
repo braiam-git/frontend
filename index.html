@@ -1,42 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <!-- Aquí va información importante pero no visible dentro del navegador -->
     <title>DON APPS</title>  <!-- titulo a mostar en la pestaña -->
-    <style>
-      body{
-        background-color: #fffbf7;
-      }
-      h1{
-        color: green;
-      }
-      button{
-        color: #fff;
-        background-color: #025157;
-      }
-      p1{
-        color: #8b8b8bcc;
-        font-family: verdana;
-        font-size: 20px;
-      }
-    </style>
+  <meta  charset="UTF-8" >
   </head>
+  <header class="header">
+    <!-- Logo con link a la página principal -->
+    <a href="/index.html">
+      <img src="squarelogo.png" width="30" alt="Don Apps"/>
+    </a>
+    <!-- Menú de navegación -->
+    <nav>
+      <ul>
+        <li>Noticias</li>
+        <li>Apps</li>
+        <li>IA</li>
+        <li>Gagdets</li>
+        <li>Ayuda</li>
+      </ul>
+    </nav>
+    <!-- Contenedor de acciones de usuario -->
+  </header>
   <body>
     <!-- Esto es lo que se verá en el navegador web -->
     <h1>NOTICIAS DE TECNOLOGIA</h1> <!-- headings 1 a 6 -->
-    <p1>Noticias y articulos sobre las novedades en el mundo tech, gadgets, apps, smartphones, pc y mas.</p1> <!-- etiqueta parrafo -->
+    <p1>Noticias y articulos sobre las novedades en el mundo tech, gadgets, apps, smartphones, pc y más.</p1> <!-- etiqueta parrafo -->
       <form>
+        Nombre:
+        <input type="text">
+        E-mail:
         <input type="email" />
+        Telefono:
+        <input type="number" />
         <button type="submit">
-          Prueba ahora;
+        Enviar
         </button>
       </form>
       <p>
         Empieza tu suscripcion y recibe noticias diariamente <strong> 7 dias de prueba gratis.</strong>
       </p>
       <p>
-        <strong>No credit card</strong> required.
+        <strong>No requiere tarjeta de credito/debito </strong>. <!-- b o strong "negritas"-->
       </p>
-      <img src="rectanglelogo.jpg" width="500" />
+      <img src="rectanglelogo.jpg" width="400"  />
   </body>
 </html>
+
+
+<style>
+  h1{
+    display: block;
+    color: #104240;
+  }
+
+  nav {
+    display: inline-block;
+   }
+
+   li {
+      display: inline;
+    }
+</style>
+<link rel="stylesheet" href="styles.css">
